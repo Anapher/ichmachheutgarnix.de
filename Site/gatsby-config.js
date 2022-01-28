@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/ichmachheutgarnix.de",
   siteMetadata: {
     title: `Heute mach ich nix`,
     siteUrl: `https://www.yourdomain.tld`,
