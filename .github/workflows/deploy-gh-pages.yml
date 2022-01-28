@@ -15,4 +15,4 @@ jobs:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: gh-pages
           gatsby-args: --prefix-paths
-          working-dir: $GITHUB_WORKSPACE/site
+          working-dir: "$GITHUB_WORKSPACE/site"
