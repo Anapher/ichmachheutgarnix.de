@@ -24,15 +24,17 @@ const QuoteSignature = styled.p`
 
 // markup
 const IndexPage = () => {
+  const { current: currentDate } = React.useRef(new Date());
+
   return (
     <main style={pageStyles}>
       <Quote>"Ich mach heut gar nix"</Quote>
       <QuoteSignature>
         Roland,{" "}
-        {new Date().toLocaleDateString("de-DE", {
+        {currentDate.toLocaleDateString("de-DE", {
           year: "numeric",
-          month: "numeric",
-          day: "numeric",
+          month: "2-digit",
+          day: "2-digit",
         })}
       </QuoteSignature>
     </main>
